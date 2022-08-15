@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify India</title>
+
+    <link rel="shortcut icon" href="./assets/shopify-favicon.png" type="image/png">
+
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- custom font -->
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- material icons -->
+
+    <!-- tailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                shopify: {
+                  button: {
+                    green2: "#378061",
+                    green: "#008060",
+                  },
+                  green: "#004c3f",
+                  lightgreen: "#c1f0d0",
+                  ligtgreen50: "#f3fcf4",
+                  darkgreen: "#002e25",
+                  whitelinen: "#fbf7ed",
+                  olive: "#42474c",
+                }
+              }
+            }
+          }
+        }
+    </script>
+    <!-- tailwindCSS -->
+
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-shopify-whitelinen">
+
+  <!-- navbar -->
+  <nav class="flex flex-wrap items-center justify-between px-20 py-6">
+    <div class="flex items-center gap-4">
+      <img src="./assets/shopify-logo.svg" alt="shopify" class="w-32">
+      <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Start <span class="material-symbols-outlined">expand_more</span></a>
+      <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Sell <span class="material-symbols-outlined">expand_more</span></a>
+      <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Market <span class="material-symbols-outlined">expand_more</span></a>
+      <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Manage <span class="material-symbols-outlined">expand_more</span></a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="#" class=" text-shopify-olive hover:text-black font-semibold">Pricing</a>
+      <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Learn <span class="material-symbols-outlined">expand_more</span></a>
+      <a href="#" class="text-shopify-olive hover:text-black font-semibold">Login</a>
+      <a href="#" class="bg-shopify-button-green rounded shadow-lg px-5 py-2 text-white font-semibold">Try for free</a>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+
+
+
+</body>
+</html>
