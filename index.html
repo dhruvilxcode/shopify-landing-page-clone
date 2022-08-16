@@ -53,34 +53,38 @@
 
   <!-- navbar -->
   <nav class="flex flex-wrap items-center justify-between px-20 py-6 sticky top-0 bg-shopify-whitelinen z-[99]">
-    <div class="flex items-center gap-4">
+    <div class="hidden md:flex items-center gap-4">
       <img src="./assets/shopify-logo.svg" alt="shopify" class="w-32">
       <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Start <span class="material-symbols-outlined">expand_more</span></a>
       <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Sell <span class="material-symbols-outlined">expand_more</span></a>
       <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Market <span class="material-symbols-outlined">expand_more</span></a>
       <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Manage <span class="material-symbols-outlined">expand_more</span></a>
     </div>
-    <div class="flex items-center gap-4">
+    <div class="hidden md:flex items-center gap-4">
       <a href="#" class=" text-shopify-olive hover:text-black font-semibold">Pricing</a>
       <a href="#" class="flex items-center text-shopify-olive hover:text-black font-semibold">Learn <span class="material-symbols-outlined">expand_more</span></a>
       <a href="#" class="text-shopify-olive hover:text-black font-semibold">Login</a>
       <a href="#" class="bg-shopify-button-green hover:bg-shopify-darkgreen rounded shadow-lg px-5 py-2 text-white font-semibold">Try for free</a>
     </div>
+    
+    <img src="./assets/shopify-logo.svg" alt="shopify" class="w-32 md:hidden">
+    <button class="md:hidden"><span class="material-symbols-outlined">menu</span></button>
+    
   </nav>
   <!-- navbar -->
 
 
 
   <!-- hero section -->
-  <div class="px-20 py-10 flex items-center justify-between gap-20">
+  <div class="px-20 py-10 flex flex-col md:flex-row items-center justify-between gap-20">
     <div>
       <h1 class="text-shopify-green font-extrabold text-5xl">
         The easiest way to sell online in India
       </h1>
       <p class="mt-10 text-[#6b7177] text-lg">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
       <div class="mt-8">
-        <input type="email" placeholder="Enter your email address" class="mr-2 w-72 px-4 py-4 rounded bg-white border-2 focus:border-shopify-button-green outline-none">
-        <button class="bg-shopify-button-green hover:bg-shopify-darkgreen rounded shadow-lg px-8 py-4 text-white font-semibold">Try for free</button>
+        <input type="email" placeholder="Enter your email address" class="w-full md:w-fit mr-2 px-4 py-4 rounded bg-white border-2 focus:border-shopify-button-green outline-none">
+        <button class="w-full md:w-fit mt-2 md:mt-0 bg-shopify-button-green hover:bg-shopify-darkgreen rounded shadow-lg px-8 py-4 text-white font-semibold">Try for free</button>
       </div>
       <p class="mt-4 text-[#42474c] text-sm">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
     </div>
@@ -101,7 +105,7 @@
 
     <a href="#" class="mt-4 font-bold flex items-center gap-1">Explore more examples<span class="material-symbols-outlined">arrow_forward</span></a>
 
-    <div class="flex mt-14 gap-4">
+    <div class="flex flex-col md:flex-row flex-wrap mt-14 gap-4">
       <div>
         <img src="assets/example-blue-tokai.webp" alt="example-blue-tokai">
 
@@ -151,7 +155,7 @@
 
     <h3 class="mt-32 font-semibold text-4xl">Take the best path forward</h3>
 
-    <div class="mt-20 flex gap-10">
+    <div class="mt-20 flex flex-col md:flex-row gap-10">
 
       <div>
         <svg class="w-9 text-shopify-lightgreen" fill="#c1f0d0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path d="M41 6a3 3 0 00-3-3H7a3 3 0 00-3 3v31a3 3 0 003 3h6a1 1 0 001-1v-1a1 1 0 00-1-1H7V12h31v2a1 1 0 001 1h1a1 1 0 001-1V6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 01-1 1h-1a1 1 0 01-1-1v-2h-3v-3h4a2 2 0 012 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 00-2.1 1.68l3.13 14.33A1.5 1.5 0 0029.79 43H30a1.5 1.5 0 001.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 00.14-2.78zm-7.29 2.1a1.5 1.5 0 00-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 01-1 1h-3a2 2 0 01-2-2v-4h3v3h2a1 1 0 011 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 012-2z"/></svg>
@@ -190,33 +194,33 @@
     <p class="text-center mt-4 text-gray-600">One platform with all the ecommerce and point of sale features<br> you need to start, run, and grow your business.</p>
 
 
-    <div class="mt-20 flex items-center gap-10">
-      <div class="w-1/2">
+    <div class="mt-20 flex flex-col md:flex-row md:items-center gap-10">
+      <div class="w-full md:w-1/2">
         <video src="assets/sell-animation-desktop.webm" autoplay muted playsinline loop="loop" poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"></video>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <h3 class="text-3xl font-medium">Sell everywhere</h3>
         <p class="my-4">Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
         <a href="#" class="flex items-center text-shopify-green font-bold gap-1">Explore ways to sell <span class="material-symbols-outlined">arrow_forward</span></a>
       </div>
     </div>
 
-    <div class="mt-20 flex items-center gap-10">
-      <div class="w-1/2">
+    <div class="mt-20 flex flex-col-reverse md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2">
         <h3 class="text-3xl font-medium">Market your business</h3>
         <p class="my-4">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
         <a href="#" class="flex items-center text-shopify-green font-bold gap-1">Explore how to market your business <span class="material-symbols-outlined">arrow_forward</span></a>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img src="./assets/market-small.webp" alt="market-small">
       </div>
     </div>
 
-    <div class="mt-20 flex items-center gap-10">
-      <div class="w-1/2">
+    <div class="mt-20 flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2">
         <img class="drop-shadow-xl rounded-lg" src="./assets/manage-everything.png" alt="manage-everything">
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <h3 class="text-3xl font-medium">Manage everything</h3>
         <p class="my-4">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
         <a href="#" class="flex items-center text-shopify-green font-bold gap-1">Explore how to manage your business <span class="material-symbols-outlined">arrow_forward</span></a>
@@ -231,14 +235,14 @@
   <div class="px-20 py-24 bg-shopify-lightgreen50">
     <h1 class="font-medium text-3xl text-shopify-green">Explore more from Shopify in India</h1>
 
-    <div class="bg-white flex items-center mt-12">
-      <div class="px-10 py-6 w-1/2">
+    <div class="bg-white flex flex-col-reverse md:flex-row md:items-center mt-12">
+      <div class="px-10 py-6 w-full md:w-1/2">
         <p class="font-bold">START</p>
         <p class="mt-4 text-xl">Launch your store with the help of a Shopify Expert</p>
         <p class="mt-4 text-gray-600">Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.</p>
         <a href="#" class="mt-4 flex items-center text-shopify-green font-bold gap-1">Browse Experts in India <span class="material-symbols-outlined">arrow_forward</span></a>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img src="./assets/india-experts-small.webp" class="object-cover w-full h-80" alt="india-experts-small">
       </div>
     </div>
@@ -261,11 +265,11 @@
 
   <!-- testimonial section -->
   <div class="px-20 py-24 bg-white">
-    <div class="flex bg-shopify-darkgreen text-white items-center">
-      <div class="w-1/2">
+    <div class="flex flex-col md:flex-row bg-shopify-darkgreen text-white items-center">
+      <div class="w-full md:w-1/2">
         <img src="./assets/alicia-souza-testimonial.jpeg" alt="alicia-souza-testimonial" class="w-full h-[700px] object-cover">
       </div>
-      <div class="text-center w-1/2 p-10">
+      <div class="text-center w-full md:w-1/2 p-10">
         <p class="text-2xl font-semibold">
           “Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn't even know I wanted.”
         </p>
@@ -288,13 +292,13 @@
 
 
   <!-- help section -->
-  <div class="flex">
-    <div class="w-1/2 py-20 px-24">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-1/2 py-20 px-24">
       <h1 class="font-medium text-4xl">
         Get the help you need,<br>every step of the way
       </h1>
       
-      <div class="grid grid-cols-2 mt-20 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-10">
 
         <div>
           <p class="font-bold">Shopify support</p>
@@ -317,7 +321,7 @@
       </div>
 
     </div>
-    <div class="w-1/2">
+    <div class="w-full md:w-1/2">
       <img src="./assets/help.webp" alt="help" class="w-full h-auto">
     </div>
   </div>
@@ -335,19 +339,19 @@
 
   <!-- footer -->
   <footer class="bg-shopify-darkgreen px-20 py-10 text-white">
-    <div class="flex gap-4 w-full border-b border-b-gray-700">
-      <div class="border-b-2 border-b-transparent hover:border-b-white pb-6"><a href="#" class="font-bold">About</a></div>
-      <div class="border-b-2 border-b-transparent hover:border-b-white pb-6"><a href="#" class="font-bold">Careers</a></div>
-      <div class="border-b-2 border-b-transparent hover:border-b-white pb-6"><a href="#" class="font-bold">Press and Media</a></div>
-      <div class="border-b-2 border-b-transparent hover:border-b-white pb-6"><a href="#" class="font-bold">Shopify Plus</a></div>
-      <div class="border-b-2 border-b-transparent hover:border-b-white pb-6"><a href="#" class="font-bold">Sitemap</a></div>
+    <div class="flex flex-wrap flex-col sm:flex-row gap-4 w-full border-b border-b-gray-700">
+      <div class="border-b-2 border-b-transparent hover:border-b-white pb-1 md:pb-6"><a href="#" class="font-bold">About</a></div>
+      <div class="border-b-2 border-b-transparent hover:border-b-white pb-1 md:pb-6"><a href="#" class="font-bold">Careers</a></div>
+      <div class="border-b-2 border-b-transparent hover:border-b-white pb-1 md:pb-6"><a href="#" class="font-bold">Press and Media</a></div>
+      <div class="border-b-2 border-b-transparent hover:border-b-white pb-1 md:pb-6"><a href="#" class="font-bold">Shopify Plus</a></div>
+      <div class="border-b-2 border-b-transparent hover:border-b-white pb-1 md:pb-6"><a href="#" class="font-bold">Sitemap</a></div>
     </div>
 
 
-    <div class="flex justify-between gap-6 mt-6">
+    <div class="flex flex-wrap flex-col sm:flex-row justify-between gap-6 mt-6">
       <div>
         <h3 class="font-bold">ONLINE STORE</h3>
-        <div class="flex gap-8">
+        <div class="flex flex-wrap flex-col sm:flex-row gap-8">
           <div class="mt-2 flex flex-col gap-2">
             <a href="#" class="text-[#b6babf] hover:text-white">Sell Online</a>
             <a href="#" class="text-[#b6babf] hover:text-white">Features</a>
@@ -406,7 +410,7 @@
     </div>
 
 
-    <div class="flex justify-between items-center gap-4 w-full border-t border-t-gray-700 mt-10 pt-8">
+    <div class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 w-full border-t border-t-gray-700 mt-10 pt-8">
       <div class="flex gap-4">
         <a href="#" class="w-[30px] h-[30px] text-white">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 30 30"><path d="M15.6 30V19.4h5V15h-5v-3.1c0-1 .6-1.9 1.3-1.9h3.8V5.6h-3.8c-3.1 0-5.6 2.8-5.6 6.3V15H7.5v4.4h3.8v10.1C4.8 27.9 0 22 0 15 0 6.7 6.7 0 15 0s15 6.7 15 15c0 8.1-6.4 14.7-14.4 15z"/></svg>
